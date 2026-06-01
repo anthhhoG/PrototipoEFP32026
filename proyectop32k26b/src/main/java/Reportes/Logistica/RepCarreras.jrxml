@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="945b25f5-bd43-426a-87cf-1e78ab2b7661">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM sig.carreras;]]>
+	</queryString>
+	<field name="codigo_carrera" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombre_carrera" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="codigo_facultad" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="estatus_carrera" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="2" width="100" height="20" uuid="37769b4e-d925-41ed-810f-1f09fc31f435"/>
+				<text><![CDATA[codigo_carrera]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="140" y="2" width="100" height="20" uuid="067cb6c8-b90e-43ab-8334-382521f43af6"/>
+				<text><![CDATA[nombre_carrera]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="294" y="2" width="100" height="20" uuid="2e3b0b19-1a77-4d41-99f8-59f5741e7176"/>
+				<text><![CDATA[codigo_facultad]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="2" width="100" height="20" uuid="c210fabd-0925-449f-b0f4-0e4617869ff6"/>
+				<text><![CDATA[estatus_carrera]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="100" height="20" uuid="cccb39ee-6b59-4214-ad74-8a668a143a68"/>
+				<textFieldExpression><![CDATA[$F{codigo_carrera}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="0" width="100" height="20" uuid="0ebbe468-9649-4cfe-8c58-e3e2c7dd6076"/>
+				<textFieldExpression><![CDATA[$F{nombre_carrera}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="294" y="0" width="100" height="20" uuid="d5f02067-d06e-4c9c-b9c8-699c34029d0b"/>
+				<textFieldExpression><![CDATA[$F{codigo_facultad}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="440" y="0" width="100" height="20" uuid="f29eda1e-dad0-47da-a0eb-b3ee44f121e4"/>
+				<textFieldExpression><![CDATA[$F{estatus_carrera}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
