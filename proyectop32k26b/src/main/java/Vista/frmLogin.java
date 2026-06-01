@@ -25,7 +25,6 @@ import java.util.HashSet;
 
 import javax.swing.JOptionPane;
 import Vista.ComercialComprasyVentas.MdiComercio;
-import Vista.Carreras.MdiCarreras;
 /**
  *
  * @author visitante
@@ -63,8 +62,6 @@ public class frmLogin extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         cboOpciones = new javax.swing.JComboBox<>();
         ccontraseña = new javax.swing.JButton();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -98,7 +95,7 @@ public class frmLogin extends javax.swing.JFrame {
 
         jLabel4.setText("Departamento");
 
-        cboOpciones.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Bancos", "Cuentas Corrientes", "Inventarios", "Seguridad", "Comercio", "Comisiones de ventas", "Planillas", "Logistica", "Carreras", " " }));
+        cboOpciones.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Bancos", "Cuentas Corrientes", "Inventarios", "Seguridad", "Comercio", "Comisiones de ventas", "Planillas", "Logistica", " " }));
         cboOpciones.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cboOpcionesActionPerformed(evt);
@@ -111,10 +108,6 @@ public class frmLogin extends javax.swing.JFrame {
                 ccontraseñaActionPerformed(evt);
             }
         });
-
-        jLabel5.setText("Anthony Hetzael Suc Gomez");
-
-        jLabel6.setText("9959-24-389");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -147,13 +140,8 @@ public class frmLogin extends javax.swing.JFrame {
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                         .addComponent(btnAceptar)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton2))))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(61, Short.MAX_VALUE))
+                                        .addComponent(jButton2)))))))
+                .addContainerGap(82, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -177,11 +165,7 @@ public class frmLogin extends javax.swing.JFrame {
                     .addComponent(btnAceptar)
                     .addComponent(jButton2)
                     .addComponent(ccontraseña))
-                .addGap(18, 18, 18)
-                .addComponent(jLabel5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel6)
-                .addContainerGap(17, Short.MAX_VALUE))
+                .addContainerGap(21, Short.MAX_VALUE))
         );
 
         pack();
@@ -307,15 +291,6 @@ case "Comisiones de ventas":
         System.out.println(e);
     }
     break;
-    case "Carreras":
-    try {
-         MdiCarreras menu = new MdiCarreras();
-        menu.setVisible(true);
-        this.dispose();
-    } catch (Exception e) {
-        System.out.println(e);
-    }
-    break;
 
 default:
     break;
@@ -401,8 +376,6 @@ default:
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JPasswordField txtContraseña;
     private javax.swing.JTextField txtUsuario;
     // End of variables declaration//GEN-END:variables
